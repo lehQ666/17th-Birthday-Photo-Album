@@ -134,7 +134,7 @@ function createGallery() {
         item.className = 'gallery-item';
         
         const img = document.createElement('img');
-        img.src = `альбом/${photo}`;
+        img.src = `${photo}`;
         img.alt = `Photo ${index + 1}`;
         img.loading = "lazy";
         
@@ -167,7 +167,7 @@ function closeLightbox() {
 
 function updateLightboxImage() {
     if (photos.length === 0) return;
-    lightboxImg.src = `альбом/${photos[currentIndex]}`;
+    lightboxImg.src = `${photos[currentIndex]}`;
 }
 
 function nextImage(e) {
